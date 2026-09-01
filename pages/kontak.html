@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Portofolio Arya</title>
+    <!-- Path kembali 1 tingkat (../) untuk memanggil CSS di luar folder pages/ -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container navbar">
+            <a href="../index.html" class="brand-logo">Arya<span>.Dev</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Saya</a></li>
+                    <li><a href="jaringan.html">Jaringan Komputer</a></li>
+                    <li><a href="iot-arduino.html">IoT & Arduino</a></li>
+                    <li><a href="karya-proyek.html">Galeri Proyek</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <section>
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p class="section-subtitle">Mari berkolaborasi atau diskusikan tugas sekolah bersama.</p>
+            
+            <div class="grid-1-2-cols">
+                <!-- Info Kontak Alternatif -->
+                <article class="card" style="background-color: var(--primary); color: white; border: none;">
+                    <h3 style="margin-bottom: 25px;">Info Kontak</h3>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #93c5fd; font-size: 0.9rem; margin-bottom: 5px;">Alamat Email Sekolah</h4>
+                        <p class="text-sm">arya.siswa@smk-contoh.sch.id</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #93c5fd; font-size: 0.9rem; margin-bottom: 5px;">Lokasi</h4>
+                        <p class="text-sm">Mojokerto, Jawa Timur<br>Indonesia</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #93c5fd; font-size: 0.9rem; margin-bottom: 5px;">Jam Aktif</h4>
+                        <p class="text-sm">Senin - Jumat<br>08.00 - 16.00 WIB</p>
+                    </div>
+                </article>
+
+                <!-- Formulir Kontak -->
+                <article class="card">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Pesan tersimulasi dikirim!');">
+                        <div class="form-group">
+                            <label for="nama">Nama Pengirim</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="nama@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kategori">Kategori Pesan</label>
+                            <select id="kategori" class="form-control" required>
+                                <option value="" disabled selected>-- Pilih Kategori --</option>
+                                <option value="pertanyaan">Pertanyaan Tugas</option>
+                                <option value="kolaborasi">Kolaborasi Proyek</option>
+                                <option value="saran">Masukan & Saran</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">Pesan Teks</label>
+                            <textarea id="pesan" class="form-control" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portofolio Digital - Arya. Dirancang untuk Tugas Informatika Kelas XII.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

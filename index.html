@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Arya.Dev</title>
+    <!-- Penggunaan External CSS sesuai Standar Industri -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="brand-logo">Arya<span>.Dev</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="pages/tentang.html">Tentang Saya</a></li>
+                    <li><a href="pages/jaringan.html">Jaringan Komputer</a></li>
+                    <li><a href="pages/iot-arduino.html">IoT & Arduino</a></li>
+                    <li><a href="pages/karya-proyek.html">Galeri Proyek</a></li>
+                    <li><a href="pages/kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama Halaman Beranda -->
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Halo, Saya Arya</h1>
+                <p class="status">Siswa Kelas XII - Peminatan Rekayasa Perangkat Lunak / Informatika</p>
+                <p>Selamat datang di portofolio digital saya. Website ini merupakan etalase digital untuk mendokumentasikan tugas, galeri karya, dan praktikum selama tahun ajaran berjalan.</p>
+                <div class="hero-buttons">
+                    <a href="pages/karya-proyek.html" class="btn btn-primary">Lihat Proyek Saya</a>
+                    <a href="pages/kontak.html" class="btn btn-outline">Hubungi Saya</a>
+                </div>
+            </div>
+            <!-- Path gambar profil ke dalam folder assets/img/ -->
+            <img src="assets/img/foto.jpg.webp" alt="Foto Profil Arya" class="hero-img" onerror="this.src='https://placehold.co/300x300/1e3a8a/ffffff?text=Arya'">
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">Ringkasan Keahlian</h2>
+            <p class="section-subtitle">Kompetensi yang dipelajari dan dikuasai.</p>
+            
+            <div class="grid-container">
+                <article class="card text-center">
+                    <h4 class="text-primary">HTML & CSS</h4>
+                    <p class="text-light text-sm">Semantic UI & Layouting, Flexbox, CSS Grid.</p>
+                </article>
+                <article class="card text-center">
+                    <h4 class="text-primary">Jaringan Dasar</h4>
+                    <p class="text-light text-sm">IP Address, Subnetting, Topologi & Cisco Packet Tracer.</p>
+                </article>
+                <article class="card text-center">
+                    <h4 class="text-primary">Pemrograman Dasar</h4>
+                    <p class="text-light text-sm">C/C++ & Algoritma Logika Pemrograman.</p>
+                </article>
+                <article class="card text-center">
+                    <h4 class="text-primary">Problem Solving</h4>
+                    <p class="text-light text-sm">Troubleshooting Perangkat Keras & Analisis Sistem.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portofolio Digital - Arya. Dirancang untuk Tugas Informatika Kelas XII.</p>
+            <p class="footer-links">
+                <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

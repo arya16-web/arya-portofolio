@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya - Portofolio Arya</title>
+    <!-- Path kembali 1 tingkat (../) untuk memanggil CSS di luar folder pages/ -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container navbar">
+            <a href="../index.html" class="brand-logo">Arya<span>.Dev</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="tentang.html" class="active">Tentang Saya</a></li>
+                    <li><a href="jaringan.html">Jaringan Komputer</a></li>
+                    <li><a href="iot-arduino.html">IoT & Arduino</a></li>
+                    <li><a href="karya-proyek.html">Galeri Proyek</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <section>
+            <h2 class="section-title">Tentang Saya</h2>
+            <p class="section-subtitle">Mengenal lebih dekat profil dan aktivitas belajar saya.</p>
+            
+            <div class="grid-2-cols">
+                <!-- Biodata -->
+                <article class="card">
+                    <h3 class="text-primary">Biodata Lengkap</h3>
+                    <table class="table-custom">
+                        <tr>
+                            <th>Nama Lengkap</th>
+                            <td>Arya Pratama</td>
+                        </tr>
+                        <tr>
+                            <th>Kelas</th>
+                            <td>XII RPL / Informatika</td>
+                        </tr>
+                        <tr>
+                            <th>Sekolah</th>
+                            <td>SMK Negeri / SMA Informatika</td>
+                        </tr>
+                        <tr>
+                            <th>Fokus Keahlian</th>
+                            <td>Web Development & Networking</td>
+                        </tr>
+                        <tr>
+                            <th>Minat Studi Depan</th>
+                            <td>Ilmu Komputer (S1) / Cyber Security</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <!-- Galeri Belajar -->
+                <article class="card">
+                    <h3 class="text-primary" style="margin-bottom: 20px;">Galeri Aktivitas Belajar</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Lab+Komputer" alt="Kegiatan Lab" style="width:100%; border-radius:8px;">
+                        <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Praktek+Jaringan" alt="Praktek Jaringan" style="width:100%; border-radius:8px;">
+                        <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Perakitan+IoT" alt="Perakitan IoT" style="width:100%; border-radius:8px;">
+                        <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Presentasi" alt="Presentasi Tugas" style="width:100%; border-radius:8px;">
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portofolio Digital - Arya. Dirancang untuk Tugas Informatika Kelas XII.</p>
+            <p class="footer-links">
+                <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

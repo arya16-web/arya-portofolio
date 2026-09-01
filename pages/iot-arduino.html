@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT & Arduino - Portofolio Arya</title>
+    <!-- Path kembali 1 tingkat (../) untuk memanggil CSS di luar folder pages/ -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container navbar">
+            <a href="../index.html" class="brand-logo">Arya<span>.Dev</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Saya</a></li>
+                    <li><a href="jaringan.html">Jaringan Komputer</a></li>
+                    <li><a href="iot-arduino.html" class="active">IoT & Arduino</a></li>
+                    <li><a href="karya-proyek.html">Galeri Proyek</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <section>
+            <h2 class="section-title">Modul Internet of Things</h2>
+            <p class="section-subtitle">Proyek rekayasa perangkat keras dan pemrograman mikrokontroler.</p>
+            
+            <div class="grid-container">
+                <article class="card">
+                    <span class="tag">Wokwi Simulator</span>
+                    <h3>Skematik Lampu Lalu Lintas</h3>
+                    <img src="https://placehold.co/600x400/f1f5f9/94a3b8?text=Skematik+Wokwi" alt="Wokwi" class="card-img">
+                    <p class="text-light text-sm">Simulasi rangkaian LED dan resistor menggunakan breadboard di aplikasi web Wokwi.</p>
+                </article>
+
+                <article class="card">
+                    <span class="tag">C++ / Arduino IDE</span>
+                    <h3>Kode Program (Blink)</h3>
+                    <div style="background: #1e293b; color: #34d399; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; margin-bottom: 16px; overflow-x: auto;">
+void setup() {<br>
+&nbsp;&nbsp;pinMode(13, OUTPUT);<br>
+}<br>
+void loop() {<br>
+&nbsp;&nbsp;digitalWrite(13, HIGH);<br>
+&nbsp;&nbsp;delay(1000);<br>
+&nbsp;&nbsp;digitalWrite(13, LOW);<br>
+&nbsp;&nbsp;delay(1000);<br>
+}
+                    </div>
+                    <p class="text-light text-sm">Logika dasar pemrograman C++ Arduino untuk mengedipkan lampu (Blink LED) dengan interval 1 detik.</p>
+                </article>
+
+                <article class="card">
+                    <span class="tag">Hardware</span>
+                    <h3>Rangkaian Sensor Suhu</h3>
+                    <img src="https://placehold.co/600x400/f1f5f9/94a3b8?text=Foto+Rakitan+Asli" alt="Hardware" class="card-img">
+                    <p class="text-light text-sm">Dokumentasi foto rakitan asli sensor suhu DHT11 dengan mikrokontroler NodeMCU ESP8266.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portofolio Digital - Arya. Dirancang untuk Tugas Informatika Kelas XII.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
